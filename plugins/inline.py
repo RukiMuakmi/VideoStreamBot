@@ -21,14 +21,14 @@ from pyrogram.types import InlineQueryResultArticle, InlineQueryResultPhoto, Inp
 
 buttons = [
             [
-                InlineKeyboardButton("🚨 Help & Commands 🚨", callback_data="help"),
+                InlineKeyboardButton(" Help & Commands ", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("👥 Support", url="https://t.me/zautebot"),
-                InlineKeyboardButton("Channel 📢", url="https://t.me/TGBotsProJect"),
+                InlineKeyboardButton("⚙️ Support ⚙️", url="https://t.me/sukuna_support"),
+                InlineKeyboardButton("Join Group", url="https://t.me/anime_plexus_chat"),
             ],
             [
-                InlineKeyboardButton("🤖 Deploy your Own Bot 🤖", url="https://heroku.com/deploy?template=https://github.com/ZauteKm/VideoStreamBot/tree/master"),
+                InlineKeyboardButton("Stream on", url="https://t.me/AnimeWorldPlexus"),
             ]
          ]
 
@@ -44,9 +44,9 @@ async def search(client, query):
     if query.query == "ZAUTE_KM":
         answers.append(
             InlineQueryResultPhoto(
-                title="Deploy Own Video Stream Bot",
-                thumb_url="https://telegra.ph/file/117de96dbfbfea2ce59a6.png",
-                photo_url="https://telegra.ph/file/117de96dbfbfea2ce59a6.png",
+                title="Enjoy Stream on Plexus",
+                thumb_url="https://telegra.ph/file/ca9f3051b3a54f6284f66.png",
+                photo_url="https://telegra.ph/file/ca9f3051b3a54f6284f66.png",
                 caption=f"{Config.REPLY_MESSAGE}\n\n<b>© Powered By : \n@ZauteKm | @ZauteBot 🧑‍🔧</b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
                 )
